@@ -1,0 +1,51 @@
+Login User Page
+User comes on signs up with linkedin. If not, sign in with work email
+
+Sign in with work email
+Enter work email
+Enter First Name Last Name
+
+Confirmation
+Confirmation by email if the user work email is entered
+Link is sent to email and then it asks him to create password
+Takes him profile page
+
+Profile Page
+Shows Market generated information for his user structure (if exists)
+Edits his/ her organnogram
+Gets motivation points for adding information
+Gets informed about mapping and payments. 
+
+Credits Page
+Explanation on how he can use credits as cash or for viewing people information
+
+Go to View Hierarchy Page
+Credits available
+Can select organisation
+Can view organisations similar
+Get organisation information
+Get similar organisation information
+View employees in different formats - organnogram, list
+Search Employees across organisations or companies
+Filters for organisation
+Click on a designation and view employee cards (if available, view past employees one behind the other)
+Click on an employee card and view details of the employee (name, phone, email, linkedin url, resume, etc.)
+
+Vendor application page
+He can apply to edit for specific companies and 
+Enter his friend’s referral code/ email 
+Enters his bank information for payments
+Can refer his friends by email
+Gets the edit access to specific companies applied for
+
+Organisation View Page
+Views the page where he can select which company he wants to edit (given access to)
+He may or mayn’t be able to view all the employee names from different sources (deduplicated) on the left 
+side
+He has an option to add an employee with details
+On the right side, there is a drag and drop functionality to modify the organnograms mentioned by him
+
+Add user(s)/ reportings page
+Goes to a page where he can enter the name, designation, email, phone and linkedin profile of employee (add additional details page available)
+Has a bulk upload using excel page
+
