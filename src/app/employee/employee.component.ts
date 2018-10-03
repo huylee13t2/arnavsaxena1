@@ -1,5 +1,5 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {MatPaginator, MatTableDataSource} from '@angular/material';
+import {MatPaginator, MatTableDataSource, MatDialog } from '@angular/material';
 
 import { AppService } from '../app.service';
 
@@ -14,6 +14,7 @@ export class EmployeeComponent implements OnInit {
 
 	constructor(
 		private api : AppService,
+    public dialog: MatDialog,
 	){
 
 	}
@@ -22,7 +23,7 @@ export class EmployeeComponent implements OnInit {
 
 	ngOnInit() {
 		this.dataSource.paginator = this.paginator;
-		this.getAllEmployee();
+		// this.getAllEmployee();
 	}
 
 	getAllEmployee() : void {
@@ -30,8 +31,24 @@ export class EmployeeComponent implements OnInit {
 			console.log(res);
 		});
 	}
+
+  openDialog() {
+    const dialogRef = this.dialog.open(EmployeeDialogComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 }
 
+// dialog
+@Component({
+  selector: 'employee-dialog',
+  templateUrl: 'employee-dialog.component.html',
+})
+export class EmployeeDialogComponent {}
+
+// table
 export interface PeriodicElement {
   name: string;
   position: number;

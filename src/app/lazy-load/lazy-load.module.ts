@@ -9,7 +9,7 @@ const routes: Routes = [
     {path: 'auth', loadChildren: '../auth/auth.module#AuthModule', canActivate: [AuthGuard]},
     {path: 'register', loadChildren: '../register/register.module#RegisterModule'},
     {path: 'login', loadChildren: '../login/login.module#LoginModule'},
-    {path: 'main', loadChildren: '../main/main.module#MainModule', canActivate: [AuthGuard]},
+    {path: 'main', loadChildren: '../main/main.module#MainModule'},
     // {path: 'editor', loadChildren: '../editor/editor.module#EditorModule'},
 
     {path: '**', redirectTo: 'main/employee'},
