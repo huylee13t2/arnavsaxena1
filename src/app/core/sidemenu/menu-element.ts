@@ -27,6 +27,13 @@ export const menus = [
         'open': true,
     },
     {
+        'name': 'Hierarchy',
+        'icon': 'account_circle',
+        'link': '/main/hierarchy',
+        'chip': false,
+        'open': true,
+    },
+    {
         'name': 'Organisation',
         'icon': 'account_balance',
         'link': '/main/organisation',

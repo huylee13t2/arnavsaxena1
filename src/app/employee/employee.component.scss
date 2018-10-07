@@ -2,5 +2,12 @@ table {
   width: 100%;
 }
 ._content{
+	position: relative;
+	overflow: hidden;
     padding: 15px !important;
+    .btn_create{
+    	// position: absolute;
+    	// right: 30px;
+    	margin-right: 15px;
+    }
 }

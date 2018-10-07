@@ -16,7 +16,7 @@ import { DashboardCrmModule } from '../dashboard-crm/dashboard-crm.module';
 import { CoreModule } from '../core/core.module';
 
 // import { EmployeeModule } from '../employee/employee.module';
-import { OrganisationModule } from '../organisation/organisation.module';
+// import { OrganisationModule } from '../organisation/organisation.module';
 import { DivisionModule } from '../division/division.module';
 
 import {CdkTableModule} from '@angular/cdk/table';
@@ -63,9 +63,16 @@ import {
 
 import { MainComponent } from './main.component';
 import { DemoComponent } from '../demo/demo.component';
-import { EmployeeComponent, EmployeeDialogComponent } from '../employee/employee.component';
+// employee
+import { EmployeeComponent } from '../employee/employee.component';
+import { EmployeeUpdateComponent } from '../employee/update/employee-update.component';
+import { EmployeeCreateComponent } from '../employee/create/employee-create.component';
+import { EmployeeRemoveComponent } from '../employee/remove/employee-remove.component';
+// organisation
 import { OrganisationComponent } from '../organisation/organisation.component';
+import { OrganisationUpdateComponent } from '../organisation/update/organisation-update.component';
 import { DivisionComponent } from '../division/division.component';
+import { HierarchyComponent } from '../hierarchy/hierarchy.component';
 
 const appRoutes: Routes = [
 { 
@@ -73,6 +80,7 @@ const appRoutes: Routes = [
     component: MainComponent,
     children: [
     { path: 'test', component: DemoComponent },
+    { path: 'hierarchy', component: HierarchyComponent },
     { path: 'employee', component: EmployeeComponent },
     { path: 'organisation', component: OrganisationComponent },
     { path: 'division', component: DivisionComponent },
@@ -98,7 +106,7 @@ const appRoutes: Routes = [
         PerfectScrollbarModule,
         // add module
         // EmployeeModule,
-        OrganisationModule,
+        // OrganisationModule,
         DivisionModule,
         // materail
         CdkTableModule,
@@ -181,9 +189,25 @@ const appRoutes: Routes = [
     declarations: [
         MainComponent,
         DemoComponent,
+        // employee
         EmployeeComponent,
-        EmployeeDialogComponent,
+        EmployeeUpdateComponent,
+        EmployeeCreateComponent,
+        EmployeeRemoveComponent,
+        // 
+        HierarchyComponent,
+        // Organisation
+        OrganisationComponent,
+        OrganisationUpdateComponent,
     ],
-    entryComponents: [EmployeeComponent, EmployeeDialogComponent],
+    entryComponents: [
+        EmployeeComponent, 
+        EmployeeUpdateComponent, 
+        EmployeeCreateComponent,
+        EmployeeRemoveComponent,
+        // Organisation
+        OrganisationComponent,
+        OrganisationUpdateComponent,
+    ],
 })
 export class MainModule { }

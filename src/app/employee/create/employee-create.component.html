@@ -1,0 +1,73 @@
+<h2 mat-dialog-title>Create Employee</h2>
+
+<mat-dialog-content class="mat-typography content">
+
+  <div class="with50">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="First Name" value="">
+    </mat-form-field>
+  </div>
+
+  <div class="with50">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Last Nanme" value="">
+    </mat-form-field>
+  </div>
+  
+  <div class="with50">
+    <mat-form-field class="example-full-width">
+      <input type="number" matInput placeholder="Age" value="">
+    </mat-form-field>
+  </div>
+
+  <div class="with50">
+    <mat-form-field class="example-full-width">
+      <mat-select placeholder="Gender">
+        <mat-option *ngFor="let gender of genders" [value]="gender.value">
+          {{gender.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="with50">
+    <mat-form-field class="example-full-width">
+      <mat-select placeholder="Role">
+        <mat-option *ngFor="let role of roles" [value]="role.value">
+          {{role.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  
+  <div class="with50">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Address" value="">
+    </mat-form-field>
+  </div>
+
+  <div class="with50">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Contact" value="">
+    </mat-form-field>
+  </div>
+
+  <div class="with50">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Organisation Div" value="">
+    </mat-form-field>
+  </div>
+
+  <div class="with50">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Organisation Code" value="">
+    </mat-form-field>
+  </div>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button mat-raised-button mat-dialog-close>Cancel</button>
+  <button mat-button mat-raised-button [mat-dialog-close]="true" cdkFocusInitial color="primary">Create</button>
+</mat-dialog-actions>
+
